@@ -1,10 +1,16 @@
+import Banner from "../components/Banner";
+import Filter from "../components/Filter";
+import PostCard from "../components/PostCard";
+
 const BlogPage = () => {
   return (
     <div>
       <h1>Blog</h1>
+      <Banner />
+      <Filter />
       <div>
-        {/* Aqui você pode mapear os posts e renderizar os cards dos posts */}
-        <p>Lista de posts</p>
+        <PostCard />
+        <PostCard />
       </div>
     </div>
   );

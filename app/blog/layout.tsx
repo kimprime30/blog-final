@@ -1,4 +1,6 @@
 import { ReactNode } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 interface BlogLayoutProps {
   children: ReactNode;
@@ -7,9 +9,9 @@ interface BlogLayoutProps {
 const BlogLayout = ({ children }: BlogLayoutProps) => {
   return (
     <div>
-      <header>Header do Blog</header>
+      <Header />
       <main>{children}</main>
-      <footer>Footer do Blog</footer>
+      <Footer />
     </div>
   );
 };
